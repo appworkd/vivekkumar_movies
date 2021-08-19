@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieReviewApp</string>
+    <string name="api_key">9V9583EMDQWOfC5P35GxuT2kdvka0OTm</string>
+    <string name="str_movie">Movie</string>
+    <string name="str_headline">Love Hurts</string>
+    <string name="by">By: %s</string>
+    <string name="description">Description</string>
+</resources>

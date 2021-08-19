@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/containerDetails"
+    tools:context=".ui.MovieDetailsActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imageViewMovieHeader"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_width"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewMovieSubHeader"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMovieHeader" />
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Bhuj"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintStart_toEndOf="@+id/imageViewMovieSubHeader"
+        app:layout_constraintTop_toTopOf="@+id/imageViewMovieSubHeader" />
+
+    <TextView
+        android:id="@+id/movieHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="The pride of india"
+        android:textColor="#D3BFBFBF"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="@+id/movieName"
+        app:layout_constraintTop_toBottomOf="@+id/movieName" />
+
+    <TextView
+        android:id="@+id/movieDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="2021"
+        android:textColor="#D3BFBFBF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/movieHeadline"
+        app:layout_constraintTop_toBottomOf="@+id/movieHeadline" />
+
+    <TextView
+        android:id="@+id/movieBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/by"
+        android:textColor="#D3BFBFBF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/movieDate"
+        app:layout_constraintTop_toBottomOf="@+id/movieDate" />
+
+    <TextView
+        android:id="@+id/movieSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/description"
+        android:textColor="#D3BFBFBF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMovieSubHeader" />
+</androidx.constraintlayout.widget.ConstraintLayout>
